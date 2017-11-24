@@ -2,7 +2,7 @@
 *********************************************************************************************************
 *
 *	模块名称 : 主程序模块。
-*	文件名称 : main.c
+*	文件名称 : main.cpp
 *	版    本 : V1.0
 *	说    明 :
 *
@@ -76,9 +76,11 @@ main(int argc, char* argv[])
   // Infinite loop
   while (1)
     {
-	  USART1_SendData('a');
-	 // USART1_SendData(seconds);
-	  USART2_SendData('x');
+
+	  USART1_SendString("I am USART1\r\n");
+	  USART1_SendData(seconds);
+	  USART2_SendString("I am USART2\r\n");
+	  USART2_SendData(seconds);
 
       blinkLed.turnOn();
       timer.sleep(seconds== 0 ? Timer::FREQUENCY_HZ : BLINK_ON_TICKS);

@@ -36,7 +36,7 @@ class Timer
 {
 public:
   typedef uint32_t ticks_t;
-  static constexpr ticks_t FREQUENCY_HZ = 1000u;
+  static constexpr ticks_t FREQUENCY_HZ = 100u;
 
 private:
   static volatile ticks_t ms_delayCount;

@@ -102,7 +102,7 @@ void USART1_SendData(u8 temp)
   while (USART_GetFlagStatus(USART1, USART_FLAG_TC) == RESET)
   {}
 }
-void USART1_SendString(u8 *s)
+void USART1_SendString(const char *s)
 {
 	while(*s)
 	{
@@ -119,7 +119,7 @@ void USART2_SendData(u8 temp)
   while (USART_GetFlagStatus(USART2, USART_FLAG_TC) == RESET)
   {}
 }
-void USART2_SendString(u8 *s)
+void USART2_SendString(const char *s)
 {
 	while(*s)
 	{

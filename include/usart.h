@@ -12,10 +12,10 @@
 
 void uart_init(u32 bound);
 void USART1_SendData(u8 temp);
-void USART1_SendString(u8 *s);
+void USART1_SendString(const char *s);
 void uart2_init(u32 bound);
 void USART2_SendData(u8 temp);
-void USART2_SendString(u8 *s);
+void USART2_SendString(const char *s);
 
 
 #endif
